@@ -70,6 +70,22 @@ const seedingData = {
         required: true,
       },
     },
+    {
+      category: "Things to see",
+      activityCountry: "United Kingdom",
+      name: "The Lake District National Park",
+      description:
+        "Explore some of the most beautiful and historic walks in the Lake District. Through the lake, gorgeous grassy moors and lovely views of Lakeland Fells. Parking cost for the day below otherwise the walking routes are free!",
+      location: "Lake District National Park, Nearest lake LA23 1LJ.",
+      price: 65,
+      imageUrl:
+        "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/477000/477291-Lake-District-Cumbria.jpg",
+      createdBy: {
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
+        required: true,
+      },
+    },
   ],
   countries: [
     {
@@ -96,6 +112,11 @@ const seedingData = {
       name: "Vietnam",
       currencyName: "Vietnamese dong",
       continent: "Asia",
+    },
+    {
+      name: "United Kingdom",
+      currencyName: "British pound sterling",
+      continent: "Europe",
     },
   ],
 };
