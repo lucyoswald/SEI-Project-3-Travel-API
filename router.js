@@ -7,8 +7,8 @@ const router = express.Router();
 
 router.route("/countries").get(countryController.getAllCountryData);
 
-// Activity routes
 
+// Activity routes
 router.route("/activities").post(activityController.addActivity);
 
 router
