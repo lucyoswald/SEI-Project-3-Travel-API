@@ -123,7 +123,7 @@ const seedData = async () => {
     seedingData.countries.map((country) => ({
       ...country,
       createdBy: userId,
-      //   activities: activities.map((activity) => activity._id),
+      // activities: activities.map((activity) => activity._id),
     }))
   );
   console.log(`${allCountryData.length} full country entries created.`);

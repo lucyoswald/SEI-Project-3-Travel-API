@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const countrySchema = mongoose.Schema(
   {
-    name: { type: String, required: true },
+    name: { type: String, required: true, unique: true },
     currencyName: { type: String, required: true },
     continent: { type: String, required: true },
     createdAt: { type: Date, default: Date.now(), required: true },
