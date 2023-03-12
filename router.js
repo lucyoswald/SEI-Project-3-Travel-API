@@ -1,7 +1,9 @@
-import { Express } from "express";
+import express from "express";
+
+import countryController from "./controllers/countryController.js";
 
 const router = express.Router();
 
-router.route("/countriesInfo").get(countryController.getAllCountryData);
+router.route("/countries").get(countryController.getAllCountryData);
 
 export default router;
