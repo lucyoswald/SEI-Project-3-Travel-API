@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import User from "./user.js";
-import Activity from "./Activity.js";
 
 const countrySchema = mongoose.Schema(
   {
