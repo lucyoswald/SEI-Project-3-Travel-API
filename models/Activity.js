@@ -4,7 +4,7 @@ const activitySchema = mongoose.Schema({
   category: { type: String, required: true },
   activityCountry: { type: String, required: true },
   name: { type: String, required },
-  description: { type: String, required: true },
+  description: { type: String, required: false },
   location: { type: String, required: true },
   // price: {type: Number, required: true},
   price: {
