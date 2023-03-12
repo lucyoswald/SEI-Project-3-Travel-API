@@ -5,7 +5,11 @@ import countryController from "./controllers/countryController.js";
 
 const router = express.Router();
 
-router.route("/countries").get(countryController.getAllCountryData);
+router
+  .route("/countries")
+  .get(countryController.getAllCountryData)
+  .post(countryController.create);
+router.route("/countries/:id").get(countryController.getById);
 
 // Activity routes
 router.route("/activities").post(activityController.addActivity);
