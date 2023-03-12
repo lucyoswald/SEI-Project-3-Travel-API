@@ -5,7 +5,7 @@ import Activity from "./Activity.js";
 const countrySchema = mongoose.Schema(
   {
     name: { type: String, required: true },
-    currency: { type: Number, required: true },
+    currencyName: { type: String, required: true },
     continent: { type: String, required: true },
     createdAt: { type: Date, default: Date.now() },
     createdBy: { type: mongoose.Schema.ObjectId, ref: "User", required: true },
@@ -21,6 +21,4 @@ const countrySchema = mongoose.Schema(
   }
 );
 
-const Country = mongoose.model("Country", countrySchema);
-
-export default Country;
+export default mongoose.model("Country", countrySchema);
