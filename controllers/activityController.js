@@ -3,14 +3,9 @@ import Activity from "../models/Activity.js";
 // Adding a new activity using POST
 
 const addActivity = async (req, res, next) => {
-  //const newActivity = {...req.body, createdBy: req.currentUser.id};
-  //console.log(req.currentUser)
-  //
-  // const foundUser = await User.findById();
-
-  const newActivity = { ...req.body };
-
+  const newActivity = { ...req.body, createdBy: req.currentUser.id };
   console.log(req.currentUser);
+
   try {
     const dbResponse = await Activity.create(newActivity);
     return res.status(200).json({
@@ -27,7 +22,7 @@ const addActivity = async (req, res, next) => {
 
 // UPDATE an activity
 const updateActivity = async (req, res, next) => {
-  const { id } = req.params;
+  const id = req.params.id;
   const dataToUpdate = req.body;
 
   try {
@@ -39,9 +34,12 @@ const updateActivity = async (req, res, next) => {
       });
     }
 
-    // if (req.currentUser.id !== foundActivity.createdBy.toString() && req.currentUser.role != "admin") {
-    //   return res.status(403).json({ message: "Unauthorized user" });
-    // }
+    if (
+      req.currentUser.id !== foundActivity.createdBy.toString() &&
+      req.currentUser.role != "admin"
+    ) {
+      return res.status(403).json({ message: "Unauthorized user" });
+    }
 
     const updatedActivity = await Activity.findByIdAndUpdate(id, dataToUpdate, {
       returnDocument: "after",
@@ -59,8 +57,12 @@ const updateActivity = async (req, res, next) => {
 const deleteActivity = async (req, res, next) => {
   const { id } = req.params;
 
-  //if(req.currentUser.role != "admin") {
-  // return res.status(403).json({message: "Only admins or users that created this specific activity can delete entries!"})}
+  if (req.currentUser.role != "admin") {
+    return res.status(403).json({
+      message:
+        "Only admins or users that created this specific activity can delete entries!",
+    });
+  }
 
   try {
     const deletedActivity = await Activity.findByIdAndDelete(id);
