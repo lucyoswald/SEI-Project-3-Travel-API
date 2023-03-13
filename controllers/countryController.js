@@ -1,4 +1,5 @@
 import Country from "../models/Country.js";
+import { adminId } from "../utils/seeding-data.js";
 
 const getAllCountryData = async (req, res, next) => {
   try {
@@ -32,12 +33,18 @@ const getById = async (req, res, next) => {
 };
 
 const create = async (req, res, next) => {
+  const { id } = req.currentUser;
+  console.log(id);
   const newInfo = {
     ...req.body,
-    createdBy: "64036a6ff49ce0b73b35a8cb",
+    createdBy: id,
   };
-  // CREATED BY WILL NEED TO BE UPDATED TO req.currentUser.id, once we get the auth completed
   try {
+    if (id !== adminId) {
+      return res.status(403).json({
+        message: "Only site admins can created new Country profiles.",
+      });
+    }
     const exists = await Country.findOne({ name: newInfo.name });
     if (exists) {
       return res.status(403).json({
