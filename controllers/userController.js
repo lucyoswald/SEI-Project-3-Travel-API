@@ -29,7 +29,7 @@ const register = async (req, res, next) => {
       newUser: { userName: newUser.userName, email: newUser.email },
     });
   } catch (err) {
-    console.log(err);
+    next(err);
   }
 };
 
@@ -53,7 +53,7 @@ const login = async (req, res, next) => {
       .status(200)
       .json({ message: `${user.userName} is now logged in`, token });
   } catch (err) {
-    console.log(err);
+    next(err);
   }
 };
 
