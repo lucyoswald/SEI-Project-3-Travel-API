@@ -34,6 +34,7 @@ const register = async (req, res, next) => {
 };
 
 const login = async (req, res, next) => {
+  console.log("You are in the login controller.");
   const { email, password } = req.body;
   try {
     const user = await User.findOne({ email });

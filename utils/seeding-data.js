@@ -5,7 +5,7 @@ const hashThePassword = async (plainTextPassword) => {
   return await bcrypt.hash(plainTextPassword, 10);
 };
 
-const adminId = "640369312cde07d7901f3946";
+export const adminId = "640369312cde07d7901f3946";
 export const userId = "64036a6ff49ce0b73b35a8cb";
 const testerId = "64036e8aa6779d2d20b1f1af";
 
@@ -127,10 +127,3 @@ export const seedingData = {
     },
   ],
 };
-
-// export default {
-//   adminId,
-//   userId,
-//   testerId,
-//   seedingData,
-// };
