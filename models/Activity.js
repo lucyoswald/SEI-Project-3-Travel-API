@@ -9,11 +9,11 @@ const activitySchema = mongoose.Schema({
   price: { type: Number, required: true },
   imageUrl: { type: String, required: false },
   linkToWebsite: { type: String, required: false },
-  createdBy: {
-    type: mongoose.Schema.ObjectId,
-    ref: "User",
-    required: true,
-  },
+  // createdBy: {
+  //   type: mongoose.Schema.ObjectId,
+  //   ref: "User",
+  //   required: true,
+  // },
 });
 
 const Activity = mongoose.model("Activity", activitySchema);
