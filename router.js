@@ -6,6 +6,7 @@ import auth from "./middleware/auth.js";
 import validate from "./middleware/validate.js";
 import { body, validationResult } from "express-validator";
 
+
 const router = express.Router();
 
 router
@@ -15,12 +16,12 @@ router
 router.route("/countries/:id").get(countryController.getById);
 
 // Activity routes
-router.route("/activities").post(activityController.addActivity);
+router.route("/activities").post(auth, activityController.addActivity);
 
 router
   .route("/activities/:id")
-  .patch(activityController.updateActivity)
-  .delete(activityController.deleteActivity);
+  .patch(auth, activityController.updateActivity)
+  .delete(auth, activityController.deleteActivity);
 
 router
   .route("/register")
