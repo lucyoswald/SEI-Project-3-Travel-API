@@ -1,7 +1,11 @@
 import userController from "./controllers/userController.js";
-import activityController from "./controllers/activityController.js";
+
 import express from "express";
 import countryController from "./controllers/countryController.js";
+import activityController from "./controllers/activityController.js";
+import auth from "./middleware/auth.js";
+
+
 
 const router = express.Router();
 
@@ -21,4 +25,5 @@ router
 
 router.route("/register").post(userController.register);
 router.route("/login").post(userController.login);
+
 export default router;
