@@ -8,11 +8,13 @@ const countrySchema = mongoose.Schema(
     createdAt: { type: Date, default: Date.now(), required: true },
     createdBy: { type: mongoose.Schema.ObjectId, ref: "User", required: true },
     //   comments: [commentsSchema] -> May or not may not use - delete or update once we've decided
-    activities: {
-      type: mongoose.Schema.ObjectId,
-      ref: "Activity",
-      required: false,
-    },
+    activities: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: "Activity",
+        required: false,
+      },
+    ],
   },
   {
     timestamps: true,
