@@ -53,7 +53,8 @@ export const seedingData = {
       description: "Take a swim at one of the most popular beachs in Sydney.",
       location: "Bondi BeachNSW 2026, Australia",
       price: 0,
-      imageUrl: "https://content.r9cdn.net/rimg/dimg/b8/05/48044093-city-41543-15984ab4ec9.jpg?width=1200&height=630&crop=true",
+      imageUrl:
+        "https://content.r9cdn.net/rimg/dimg/b8/05/48044093-city-41543-15984ab4ec9.jpg?width=1200&height=630&crop=true",
     },
     {
       category: "Things to see",
@@ -156,7 +157,8 @@ export const seedingData = {
         "Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.",
       location: "Utah, United States.",
       price: 29,
-      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg",
+      imageUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg",
       linkToWebsite: "https://www.nps.gov/zion/index.htm",
     },
     {
@@ -463,6 +465,8 @@ export const seedingData = {
       price: 40,
       imageUrl:
         "https://bookmestatic.net.nz/bookme-review-images/reviews/4d1fb6ee-2f68-4931-b09d-26fef6f2dac5.jpeg",
+    },
+
     {
       category: "Things to do",
       activityCountry: "Thailand",
