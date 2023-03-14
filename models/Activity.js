@@ -6,7 +6,7 @@ const activitySchema = mongoose.Schema({
   name: { type: String, required: false },
   description: { type: String, required: false },
   location: { type: String, required: true },
-  price: { type: Number, required: true },
+  price: { type: Number, required: false },
   imageUrl: { type: String, required: false },
   linkToWebsite: { type: String, required: false },
   createdBy: {

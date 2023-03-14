@@ -3,7 +3,7 @@ import { adminId } from "../utils/seeding-data.js";
 
 const getAllCountryData = async (req, res, next) => {
   try {
-    const data = await Country.find({});
+    const data = await Country.find({}).populate("activities");
     if (Object.keys(data).length) {
       return res.status(200).json({ message: "Success", data });
     } else {
@@ -19,7 +19,7 @@ const getAllCountryData = async (req, res, next) => {
 const getById = async (req, res, next) => {
   const { id } = req.params;
   try {
-    const countryData = await Country.findById(id);
+    const countryData = await Country.findById(id).populate("activities");
     if (countryData) {
       return res.status(200).json({ message: "Data Found", countryData });
     } else {
