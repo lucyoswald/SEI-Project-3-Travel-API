@@ -25,6 +25,7 @@ const auth = async (req, res, next) => {
     }
 
     req.currentUser = foundUser;
+    next();
   } catch (err) {
     next(err);
   }
