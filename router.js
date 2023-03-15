@@ -17,12 +17,12 @@ router
 
 router.route("/countries/:id").get(countryController.getById);
 
-router
-  .route("/itinerary")
-  .post(auth, itineraryController.add)
-  .get(itineraryController.findAll);
+router.route("/itinerary").post(auth, itineraryController.create);
 
-router.route("/itinerary/:id").patch(itineraryController.update);
+router
+  .route("/itinerary/:id")
+  .patch(auth, itineraryController.update)
+  .delete(auth, itineraryController.remove);
 
 // Activity routes
 router.route("/activities").post(auth, activityController.addActivity);
