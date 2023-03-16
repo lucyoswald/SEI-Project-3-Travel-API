@@ -5,6 +5,15 @@ import Activity from "../models/Activity.js";
 // create
 // delete
 
+const getItinerary = async (req, res, next) => {
+  try {
+    const ownItinerary = await Itinerary.find({});
+    return res.status(200).json({ message: "Found", ownItinerary });
+  } catch (err) {
+    next(err);
+  }
+};
+
 const create = async (req, res, next) => {
   const { activityId } = req.body;
   try {
@@ -66,6 +75,7 @@ const remove = async (req, res, next) => {
 };
 
 export default {
+  getItinerary,
   update,
   create,
   remove,

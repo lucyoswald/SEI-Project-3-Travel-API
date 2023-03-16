@@ -17,7 +17,10 @@ router
 
 router.route("/countries/:id").get(countryController.getById);
 
-router.route("/itinerary").post(auth, itineraryController.create);
+router
+  .route("/itinerary")
+  .get(itineraryController.getItinerary)
+  .post(auth, itineraryController.create);
 
 router
   .route("/itinerary/:id")
