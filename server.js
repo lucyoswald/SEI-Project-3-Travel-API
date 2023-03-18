@@ -6,7 +6,7 @@ import errorHandler from "./middleware/errorhandler.js";
 import fallThroughHandler from "./middleware/fallthroughHandler.js";
 
 const app = express();
-const PORT = 6000;
+const PORT = 8000;
 
 app.use(express.json());
 app.use(logger);
