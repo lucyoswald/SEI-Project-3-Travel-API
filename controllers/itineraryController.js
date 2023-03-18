@@ -1,4 +1,4 @@
-import Itinerary from "../models/itinerary.js";
+import Itinerary from "../models/Itinerary.js";
 import Activity from "../models/Activity.js";
 
 // update
