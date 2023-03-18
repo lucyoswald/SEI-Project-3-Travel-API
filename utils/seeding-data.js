@@ -733,5 +733,35 @@ export const seedingData = {
         "http://www.harlemworldmagazine.com/wp-content/uploads/2022/06/United-Kingdom.jpg",
       text: "The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe.",
     },
+    {
+      name: "Germany",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "Turkey",
+      currencyName: "Turkish lira",
+      continent: "Asia/Europe",
+    },
+    {
+      name: "China",
+      currencyName: "Chinese Yuan",
+      continent: "Asia",
+    },
+    {
+      name: "Italy",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "Spain",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "India",
+      currencyName: "Indian Rupee",
+      continent: "Asia",
+    },
   ],
 };
