@@ -35,7 +35,7 @@ router
   .delete(auth, activityController.deleteActivity);
 
 router
-  .route("/register")
+  .route("/signup")
   .post(
     body("email").isEmail(),
     body("role").not().contains("admin"),

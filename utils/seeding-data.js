@@ -26,7 +26,7 @@ export const seedingData = {
       _id: userId,
     },
     {
-      email: "testeraccount@gmail.com",
+      email: "testAccount@gmail.com",
       userName: "Tester",
       password: await hashThePassword("12345678"),
       role: "user",
@@ -139,7 +139,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "Arches National Park",
       description:
         "Arches National Park lies north of Moab in the state of Utah. Bordered by the Colorado River in the southeast, it’s known as the site of more than 2,000 natural sandstone arches, such as the massive, red-hued Delicate Arch in the east. Long, thin Landscape Arch stands in Devils Garden to the north. Other geological formations include Balanced Rock, towering over the desert landscape in the middle of the park.",
@@ -151,7 +151,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "Zion National Park",
       description:
         "Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.",
@@ -163,7 +163,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "Bryce Canyon National Park",
       description:
         "Bryce Canyon National Park, a sprawling reserve in southern Utah, is known for crimson-colored hoodoos, which are spire-shaped rock formations. The park’s main road leads past the expansive Bryce Amphitheater, a hoodoo-filled depression lying below the Rim Trail hiking path. It has overlooks at Sunrise Point, Sunset Point, Inspiration Point and Bryce Point. Prime viewing times are around sunup and sundown.",
@@ -175,7 +175,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "Colorado River Half-Day Rafting Trip",
       description:
         "Half-day Colorado River rafting trip on mild class 1 and 2 rapids. The trip covers seven miles with fantastic scenery, informative guides and lots of fun.",
@@ -188,7 +188,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "Self-Drive 2.5-Hour Hells Revenge 4x4 Guided Tour",
       description:
         "Drive a 4x4 UTV through a guided tour of the Hell’s Revenge Trail to the Colorado River, where you can overlook into Arches National Park. This thrilling adventure through Utah's iconic landscapes is available for the morning, afternoon, or sunset.",
@@ -201,7 +201,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "3-Hour Jet Boat Tour to Dead Horse Point State Park",
       description:
         "Experience a jet boat tour on the Colorado River that passes through the bottom of Dead Horse State Park, the famous Thelma and Louise Point. Enjoy an awe-inspiring panorama.",
@@ -214,7 +214,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "Quesadilla Mobilla",
       description:
         "This is a food truck on the corner of the food truck park in Moab, UT.",
@@ -226,7 +226,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "Desert Bistro",
       description:
         "Casually upscale gourmet cuisine with a southwestern flair. Join us in our intimate dining room or on the covered patio for fun & innovative food with friendly, attentive service. Visit our website to see our current menu and make reservations.",
@@ -238,7 +238,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "USA",
+      activityCountry: "United States",
       name: "The Broken Oar Restaurant",
       description:
         "Casual American dining in a lodge setting, with options including steaks, seafood, pasta & barbecue.",
@@ -525,7 +525,7 @@ export const seedingData = {
       activityCountry: "Thailand",
       name: "The Grand Palace",
       description:
-        "A trip to Bangkok would not be complete without a visit to the spectacular Grand Palace, a collection of impressive temples and structures in Rattanakosin, the historic centre of the city. Built by the early kings of the Chakri dynasty, this vast complex is home to shimmering gold palaces, intricate Buddha statues and over 50 temples including Wat Phra Kaeo, Thailand’s oldest temple which houses the thousand-year-old Emerald Buddha. The Thai Royal Family no longer live here so visitors have the freedom to explore the buildings and get up close to throne halls, royal stables and government buildings.",
+        "A trip to Bangkok would not be complete without a visit to the spectacular Grand Palace, a collection of impressive temples and structures in Rattanakosin, the historic centre of the city. Built by the early kings of the Chakri dynasty, this vast complex is home to shimmering gold palaces, intricate Buddha statues and over 50 temples including Wat Phra Kaeo, Thailand’s oldest temple which houses the thoUnited Statesnd-year-old Emerald Buddha. The Thai Royal Family no longer live here so visitors have the freedom to explore the buildings and get up close to throne halls, royal stables and government buildings.",
       location: "Bangkok",
       price: 0.0,
       imageUrl:
@@ -689,31 +689,79 @@ export const seedingData = {
       name: "Australia",
       currencyName: "Australian dollar",
       continent: "Australia",
+      image:
+        "https://thumbs.dreamstime.com/b/sydney-opera-house-australia-14210813.jpg",
+      text: "Australia, is a country comprising the mainland of the Australian continent, the island of Tasmania, and numerous smaller islands. ",
     },
     {
       name: "New Zealand",
       currencyName: "New Zealand Dollar",
       continent: "Oceania",
+      image:
+        "https://images.movehub.com/wp-content/uploads/2018/08/15163753/nz-22.jpg",
+      text: "New Zealand is an island country in the southwestern Pacific Ocean. It consists of two main landmasses—the North Island and the South Island —and over 700 smaller islands.",
     },
     {
       name: "Thailand",
       currencyName: "Thai Baht",
       continent: "Asia",
+      image:
+        "https://www.holidayhypermarket.co.uk/wp-content/uploads/2021/05/Thailand_shutterstock_162648617.png",
+      text: "Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha.",
     },
     {
-      name: "USA",
+      name: "United States",
       currencyName: "US Dollar",
       continent: "North America",
+      image:
+        "https://media.cntraveler.com/photos/63483e15ef943eff59de603a/3:2/w_3000,h_2000,c_limit/New%20York%20City_GettyImages-1347979016.jpg",
+      text: "The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean.",
     },
     {
       name: "Vietnam",
       currencyName: "Vietnamese dong",
       continent: "Asia",
+      image:
+        "https://www.telegraph.co.uk/content/dam/travel/2022/11/30/TELEMMGLPICT000317515821_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg?imwidth=680",
+      text: "Vietnam is a Southeast Asian country known for its beaches, rivers, Buddhist pagodas and bustling cities.",
     },
     {
       name: "United Kingdom",
       currencyName: "British pound sterling",
       continent: "Europe",
+      image:
+        "http://www.harlemworldmagazine.com/wp-content/uploads/2022/06/United-Kingdom.jpg",
+      text: "The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe.",
+    },
+    {
+      name: "Germany",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "Turkey",
+      currencyName: "Turkish lira",
+      continent: "Asia/Europe",
+    },
+    {
+      name: "China",
+      currencyName: "Chinese Yuan",
+      continent: "Asia",
+    },
+    {
+      name: "Italy",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "Spain",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "India",
+      currencyName: "Indian Rupee",
+      continent: "Asia",
     },
   ],
 };
