@@ -715,5 +715,35 @@ export const seedingData = {
       currencyName: "British pound sterling",
       continent: "Europe",
     },
+    {
+      name: "Germany",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "Turkey",
+      currencyName: "Turkish lira",
+      continent: "Asia/Europe",
+    },
+    {
+      name: "China",
+      currencyName: "Chinese Yuan",
+      continent: "Asia",
+    },
+    {
+      name: "Italy",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "Spain",
+      currencyName: "Euro",
+      continent: "Europe",
+    },
+    {
+      name: "India",
+      currencyName: "Indian Rupee",
+      continent: "Asia",
+    },
   ],
 };
