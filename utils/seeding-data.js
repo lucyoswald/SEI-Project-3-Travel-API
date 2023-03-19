@@ -8,6 +8,7 @@ const hashThePassword = async (plainTextPassword) => {
 export const adminId = "640369312cde07d7901f3946";
 export const userId = "64036a6ff49ce0b73b35a8cb";
 const testerId = "64036e8aa6779d2d20b1f1af";
+const kpId = "6416e187c7d67cc5c2d34753";
 
 export const seedingData = {
   users: [
@@ -31,6 +32,13 @@ export const seedingData = {
       password: await hashThePassword("12345678"),
       role: "user",
       _id: testerId,
+    },
+    {
+      email: "kptest@gmail.com",
+      userName: "Kptest",
+      password: await hashThePassword("Maisey"),
+      role: "user",
+      _id: kpId,
     },
   ],
   activities: [
@@ -733,35 +741,35 @@ export const seedingData = {
         "http://www.harlemworldmagazine.com/wp-content/uploads/2022/06/United-Kingdom.jpg",
       text: "The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe.",
     },
-    {
-      name: "Germany",
-      currencyName: "Euro",
-      continent: "Europe",
-    },
-    {
-      name: "Turkey",
-      currencyName: "Turkish lira",
-      continent: "Asia/Europe",
-    },
-    {
-      name: "China",
-      currencyName: "Chinese Yuan",
-      continent: "Asia",
-    },
-    {
-      name: "Italy",
-      currencyName: "Euro",
-      continent: "Europe",
-    },
-    {
-      name: "Spain",
-      currencyName: "Euro",
-      continent: "Europe",
-    },
-    {
-      name: "India",
-      currencyName: "Indian Rupee",
-      continent: "Asia",
-    },
+    // {
+    //   name: "Germany",
+    //   currencyName: "Euro",
+    //   continent: "Europe",
+    // },
+    // {
+    //   name: "Turkey",
+    //   currencyName: "Turkish lira",
+    //   continent: "Asia/Europe",
+    // },
+    // {
+    //   name: "China",
+    //   currencyName: "Chinese Yuan",
+    //   continent: "Asia",
+    // },
+    // {
+    //   name: "Italy",
+    //   currencyName: "Euro",
+    //   continent: "Europe",
+    // },
+    // {
+    //   name: "Spain",
+    //   currencyName: "Euro",
+    //   continent: "Europe",
+    // },
+    // {
+    //   name: "India",
+    //   currencyName: "Indian Rupee",
+    //   continent: "Asia",
+    // },
   ],
 };
