@@ -741,35 +741,53 @@ export const seedingData = {
         "http://www.harlemworldmagazine.com/wp-content/uploads/2022/06/United-Kingdom.jpg",
       text: "The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe.",
     },
-    // {
-    //   name: "Germany",
-    //   currencyName: "Euro",
-    //   continent: "Europe",
-    // },
-    // {
-    //   name: "Turkey",
-    //   currencyName: "Turkish lira",
-    //   continent: "Asia/Europe",
-    // },
-    // {
-    //   name: "China",
-    //   currencyName: "Chinese Yuan",
-    //   continent: "Asia",
-    // },
-    // {
-    //   name: "Italy",
-    //   currencyName: "Euro",
-    //   continent: "Europe",
-    // },
-    // {
-    //   name: "Spain",
-    //   currencyName: "Euro",
-    //   continent: "Europe",
-    // },
-    // {
-    //   name: "India",
-    //   currencyName: "Indian Rupee",
-    //   continent: "Asia",
-    // },
+    {
+      name: "Germany",
+      currencyName: "Euro",
+      continent: "Europe",
+      image: "https://cdn.cnn.com/cnnnext/dam/assets/170706112840-germany.jpg",
+      text: "Germany, officially the Federal Republic of Germany, is a country in Central Europe.",
+    },
+    {
+      name: "Turkey",
+      currencyName: "Turkish lira",
+      continent: "Asia/Europe",
+      image:
+        "https://media.worldnomads.com/Explore/middle-east/hagia-sophia-church-istanbul-turkey-gettyimages-skaman306.jpg",
+      text: "Turkey, officially the Republic of Türkiye, is a transcontinental country located mainly on the Anatolian Peninsula in Western Asia, with a small portion on the Balkan Peninsula in Southeast Europe.",
+    },
+
+    {
+      name: "China",
+      currencyName: "Chinese Yuan",
+      continent: "Asia",
+      image:
+        "https://cdn.britannica.com/89/179589-138-3EE27C94/Overview-Great-Wall-of-China.jpg?w=800&h=450&c=crop",
+      text: "China, officially the People's Republic of China, is a country in East Asia. It is the world's most populous country, with a population exceeding 1.4 billion.",
+    },
+    {
+      name: "Italy",
+      currencyName: "Euro",
+      continent: "Europe",
+      image:
+        "https://imageio.forbes.com/specials-images/imageserve/63863f8e897028436ea067d8/Rome--Italy--Papal-Basilica-Of-St--Peter-In-The-Vatican--Sightseeing-Boat-Floating/960x0.jpg?format=jpg&width=960",
+      text: "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins.",
+    },
+    {
+      name: "Spain",
+      currencyName: "Euro",
+      continent: "Europe",
+      image:
+        "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/madrid-dos-dias/catedral-almudena-madrid-s527688430.jpg_1224728085.jpg",
+      text: "Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters.",
+    },
+    {
+      name: "India",
+      currencyName: "Indian Rupee",
+      continent: "Asia",
+      image:
+        "https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2021/11/HERO-Agra-Taj-Mahal-GettyImages-1169737420-copy.jpg?w=2120&h=848&crop=1",
+      text: "India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area and the second-most populous country.",
+    },
   ],
 };
