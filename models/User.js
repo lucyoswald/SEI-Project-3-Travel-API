@@ -6,11 +6,18 @@ const userSchema = mongoose.Schema(
     userName: { type: String, required: true },
     password: { type: String, required: true },
     role: { type: String, enum: ["admin", "user"], default: "user" },
-    itineraries: {
-      type: mongoose.Schema.ObjectId,
-      ref: "Itinerary",
-      required: false,
-    },
+    // itineraries: {
+    //   type: mongoose.Schema.ObjectId,
+    //   ref: "Itinerary",
+    //   required: false,
+    // },
+    itinerary: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: "Activity",
+        required: false,
+      },
+    ],
   },
   {
     timestamps: true,
