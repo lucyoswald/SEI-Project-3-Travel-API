@@ -2,6 +2,46 @@ import User from "../models/User.js";
 import bcrypt from "bcrypt";
 import { JWT_SECRET } from "../consts.js";
 import jwt from "jsonwebtoken";
+import Activity from "../models/Activity.js";
+
+const getUserData = async (req, res, next) => {
+  const { id } = req.params;
+  console.log(req.params);
+
+  try {
+    const foundUser = await User.findById(id);
+    console.log(foundUser);
+    if (!foundUser) {
+      return res.status(404).json({ message: `No user found with ${id}.` });
+    }
+
+    return res.status(200).json({ message: "User found.", foundUser });
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const updateItinerary = async (req, res, next) => {
+  const { id } = req.params;
+  const { activityId } = req.body;
+  try {
+    const foundUser = await User.findById(id);
+    console.log(foundUser);
+    if (!foundUser) {
+      return res.status(404).json({ message: `No user found with ${id}.` });
+    }
+    const foundActivity = await Activity.findById(activityId);
+    if (!foundActivity) {
+      return res.status(404).json({ message: "Activity not found." });
+    }
+    foundUser.itinerary.push(activityId);
+    const updatedItinerary = await foundUser.save();
+
+    return res.status(200).json({ message: "User found.", updatedItinerary });
+  } catch (err) {
+    next(err);
+  }
+};
 
 const register = async (req, res, next) => {
   const userData = req.body;
@@ -61,4 +101,6 @@ const login = async (req, res, next) => {
 export default {
   register,
   login,
+  getUserData,
+  updateItinerary,
 };
