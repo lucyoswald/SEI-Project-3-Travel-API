@@ -9,7 +9,7 @@ const getUserData = async (req, res, next) => {
   console.log(req.params);
 
   try {
-    const foundUser = await User.findById(id);
+    const foundUser = await User.findById(id).populate("itinerary");
     console.log(foundUser);
     if (!foundUser) {
       return res.status(404).json({ message: `No user found with ${id}.` });
