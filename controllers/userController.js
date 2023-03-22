@@ -90,9 +90,34 @@ const login = async (req, res, next) => {
     const payload = { id: user.id };
 
     const token = jwt.sign(payload, JWT_SECRET);
-    return res
-      .status(200)
-      .json({ message: `${user.userName} is now logged in`, token });
+    console.log(token);
+    return res.status(200).json({
+      message: `${user.userName} is now logged in`,
+      userId: `${user._id}`,
+      token,
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
+const updateLikedCountries = async (req, res, next) => {
+  const { id } = req.params;
+  const { country } = req.body;
+  try {
+    const foundUser = await User.findById(id);
+    console.log(foundUser);
+    if (!foundUser) {
+      return res.status(404).json({ message: `No user found with ${id}.` });
+    }
+
+    foundUser.likedCountries.push(country);
+    const updatedLikes = await foundUser.save();
+
+    return res.status(200).json({
+      message: "The liked countries array has been updated",
+      updatedLikes,
+    });
   } catch (err) {
     next(err);
   }
@@ -103,4 +128,5 @@ export default {
   login,
   getUserData,
   updateItinerary,
+  updateLikedCountries,
 };

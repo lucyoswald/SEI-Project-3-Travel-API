@@ -44,6 +44,13 @@ router
   );
 router.route("/login").post(userController.login);
 
+//Update the likedCountries array
+
+router.route("/countries/:id").patch(userController.updateLikedCountries);
+
+//Update like button
+router.route("/countries/:id").patch(countryController.updateLikeButton);
+
 router
   .route("/user/:id")
   .get(auth, userController.getUserData)
