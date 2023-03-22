@@ -61,8 +61,48 @@ const create = async (req, res, next) => {
   }
 };
 
+// DELETE an activity
+
+//Like button update
+const updateLikeButton = async (req, res, next) => {
+  const { id } = req.params;
+  console.log("Req.body", req.body);
+  const { numberOfLikes } = req.body;
+
+  // if (req.currentUser.role != "admin") {
+  //   return res.status(403).json({
+  //     message:
+  //       "Only admins or users that created this specific activity can delete entries!",
+  //   });
+  // }
+
+  try {
+    console.log({ numberOfLikes });
+    const foundCountry = await Country.findByIdAndUpdate(
+      id,
+      { numberOfLikes },
+      {
+        returnDocument: "after",
+      }
+    );
+    console.log(foundCountry);
+    if (!foundCountry) {
+      return res
+        .status(404)
+        .json({ message: `No country with that ${id} has been found` });
+    } else {
+      return res.status(200).json({
+        message: `Like button updated`,
+      });
+    }
+  } catch (err) {
+    next(err);
+  }
+};
+
 export default {
   getAllCountryData,
   getById,
   create,
+  updateLikeButton,
 };
