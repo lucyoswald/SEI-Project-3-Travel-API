@@ -2,7 +2,11 @@ import mongoose from "mongoose";
 
 const activitySchema = mongoose.Schema({
   category: { type: String, required: true },
-  activityCountry: { type: String, required: true },
+  activityCountry: {
+    type: mongoose.Schema.ObjectId,
+    ref: "Country",
+    required: false,
+  },
   name: { type: String, required: false },
   description: { type: String, required: false },
   location: { type: String, required: true },

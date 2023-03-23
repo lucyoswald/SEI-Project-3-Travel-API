@@ -28,7 +28,10 @@ const create = async (req, res, next) => {
     });
     return res
       .status(200)
-      .json({ message: "Success, you've created an itinerary.", newItinerary });
+      .json({
+        message: "Success, you've added an activity to your itinerary.",
+        newItinerary,
+      });
   } catch (err) {
     next(err);
   }
