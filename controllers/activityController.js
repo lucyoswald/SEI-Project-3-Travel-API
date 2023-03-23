@@ -5,14 +5,25 @@ import Country from "../models/Country.js";
 
 const addActivity = async (req, res, next) => {
   const newActivity = { ...req.body, createdBy: req.currentUser.id };
-  console.log(req.currentUser);
+  // console.log(req.currentUser);
+  // console.log(newActivity);
 
   try {
     const addedActivity = await Activity.create(newActivity);
+    // console.log(addedActivity);
+    // console.log(`this is the country id ${newActivity.activityCountry}`);
+    const countryToAddTo = await Country.findById(newActivity.activityCountry);
+    if (!countryToAddTo) {
+      return res.status(404).json({ message: "Country not found." });
+    }
+    console.log(countryToAddTo);
+    // console.log(`addedActivity id ${addedActivity.id}`);
+    countryToAddTo.activities.push(addedActivity.id);
+    const activityAdded = await countryToAddTo.save();
 
     return res.status(200).json({
       message: "Successfully created a new activity in our database!",
-      addedActivity,
+      activityAdded,
     });
   } catch (err) {
     next(err);

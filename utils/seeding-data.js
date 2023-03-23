@@ -516,6 +516,8 @@ export const seedingData = {
         "Thailands most impressive wildlife haven is just a few short hours from Bangkok by road, but the dense, dripping jungles hide elephants, monkeys, gibbons, bears, hornbills, bats and some of the last wild Thai tigers. Hikes in the rainforest pass through terrain strung with vines and orchids while waterfalls thunder into jungle pools.",
       location: "Khao Yai",
       price: 0.0,
+      imageUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Haew_Suwat_Waterfall_Khao-Yai02.jpg/1200px-Haew_Suwat_Waterfall_Khao-Yai02.jpg",
     },
     {
       category: "Things to see",
@@ -580,6 +582,8 @@ export const seedingData = {
         "Head chef Ekkarin “Ek” Sae-Guay is known locally as the “Carabao Noodle Guy in Thonburi”, as he belts out tunes by the Thai rock band Carabao while serving up the best pork noodles in the city. His stew is infused with a secret blend of spices for hours before the stall opens for dinner; it’s then topped with milk to help create a richer texture. There’s usually a long queue of locals at his stall, but Ek whips up the bowls in no time, entertaining the waiting crowd with a side of dance moves.",
       location: "Bangkok",
       price: 2.0,
+      imageUrl:
+        "https://christieathome.com/wp-content/uploads/2020/12/Char-Kway-Teow-13-scaled.jpg",
     },
     {
       category: "Places to eat",
@@ -623,7 +627,7 @@ export const seedingData = {
       location: "Hanoi",
       price: 36.93,
       imageUrl:
-        "https://lp-cms-production.imgix.net/2023-01/Vietnam-Sebastian%20Warneke-GettyImages-1032621458-rfc.jpg?auto=format&q=75&w=1024",
+        "https://www.itourvn.com/images/easyblog_articles/422/water-puppet-theares-in-Vietnam.jpg",
     },
     {
       category: "Things to see",

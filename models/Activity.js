@@ -5,7 +5,7 @@ const activitySchema = mongoose.Schema({
   activityCountry: {
     type: mongoose.Schema.ObjectId,
     ref: "Country",
-    required: false,
+    required: true,
   },
   name: { type: String, required: false },
   description: { type: String, required: false },
