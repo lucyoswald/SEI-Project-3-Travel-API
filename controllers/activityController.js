@@ -1,4 +1,5 @@
 import Activity from "../models/Activity.js";
+import Country from "../models/Country.js";
 
 // Adding a new activity using POST
 
@@ -7,10 +8,11 @@ const addActivity = async (req, res, next) => {
   console.log(req.currentUser);
 
   try {
-    const dbResponse = await Activity.create(newActivity);
+    const addedActivity = await Activity.create(newActivity);
+
     return res.status(200).json({
       message: "Successfully created a new activity in our database!",
-      addedActivity: dbResponse,
+      addedActivity,
     });
   } catch (err) {
     next(err);
