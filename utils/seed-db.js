@@ -13,6 +13,7 @@ const seedData = async () => {
 
   const users = await User.create(seedingData.users);
   console.log(`${users.length} pre-set user accounts created.`);
+  console.log(users);
 
   const activities = await Activity.create(
     seedingData.activities.map((activity) => ({

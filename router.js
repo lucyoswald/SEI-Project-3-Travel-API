@@ -45,15 +45,15 @@ router
 router.route("/login").post(userController.login);
 
 //Update the likedCountries array
+//This updates the likedcountries in the user schema
+router.route("/userlikes/:id").patch(userController.userlikedCountries);
 
-router.route("/countries/:id").patch(userController.updateLikedCountries);
-
-//Update like button
-router.route("/countries/:id").patch(countryController.updateLikeButton);
+//Update like button - this updates the NUMBER of likes the country has in the country schema
+router.route("/countries/:id/likes").patch(countryController.countryLikes);
 
 router
   .route("/user/:id")
-  .get(auth, userController.getUserData)
+  .get(userController.getUserData)
   .patch(auth, userController.updateItinerary);
 
 export default router;
