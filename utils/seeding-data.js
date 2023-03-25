@@ -793,7 +793,7 @@ const activities = [
   },
   {
     category: "Things to do",
-    activityCountry: "India",
+    activityCountry: countryIds.India,
     name: "Ranthambore National Park",
     description:
       "India contains over half of the world's population of wild tigers so if you want to see one of these incredible animals in their natural habitat, this is the place! Ranthambore National Park is one of the top tiger reserves in the country, containing around 60 wild tigers along with foxes, crocodiles, leopards, sloth bears, and jackals.",
