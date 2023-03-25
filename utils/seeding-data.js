@@ -10,6 +10,29 @@ export const userId = "64036a6ff49ce0b73b35a8cb";
 const testerId = "64036e8aa6779d2d20b1f1af";
 const kpId = "6416e187c7d67cc5c2d34753";
 
+const countryIds = {
+  Australia: new mongoose.Types.ObjectId(),
+  NewZealand: new mongoose.Types.ObjectId(),
+  Thailand: new mongoose.Types.ObjectId(),
+  UnitedStates: new mongoose.Types.ObjectId(),
+  Vietnam: new mongoose.Types.ObjectId(),
+  UnitedKingdom: new mongoose.Types.ObjectId(),
+  Germany: new mongoose.Types.ObjectId(),
+  Turkey: new mongoose.Types.ObjectId(),
+  China: new mongoose.Types.ObjectId(),
+  Italy: new mongoose.Types.ObjectId(),
+  Spain: new mongoose.Types.ObjectId(),
+  India: new mongoose.Types.ObjectId(),
+  // Japan: new mongoose.Types.ObjectId(),
+  // Canada: new mongoose.Types.ObjectId(),
+};
+
+// const countryIds = {};
+
+// seedingData.countries
+//   .map((country) => country.name)
+//   .forEach((country) => (countryIds[country] = mongoose.Types.ObjectId()));
+
 export const seedingData = {
   users: [
     {
@@ -44,7 +67,7 @@ export const seedingData = {
   activities: [
     {
       category: "Things to see",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Sydney Opera House",
       description:
         "Walk along the harbour for a view of the Sydney Opera House. The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the foreshore of Sydney Harbour, it is widely regarded as one of the world's most famous and distinctive building.",
@@ -56,7 +79,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Bondi Beach",
       description: "Take a swim at one of the most popular beachs in Sydney.",
       location: "Bondi BeachNSW 2026, Australia",
@@ -66,7 +89,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Blue Mountains",
       description:
         "The Blue Mountains is a rugged region west of Sydney in Australia’s New South Wales. Known for dramatic scenery, it encompasses steep cliffs, eucalyptus forests, waterfalls and villages dotted with guesthouses, galleries and gardens..",
@@ -77,7 +100,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Sydney Harbour Bridge Climb",
       description:
         "The Blue Mountains is a rugged region west of Sydney in Australia’s New South Wales. Known for dramatic scenery, it encompasses steep cliffs, eucalyptus forests, waterfalls and villages dotted with guesthouses, galleries and gardens..",
@@ -88,7 +111,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Great Ocean Road",
       description:
         "Take a day to drive the Great Ocean Road. The Great Ocean Road is an Australian National Heritage listed 240-kilometre stretch of road along the south-eastern coast of Australia between the Victorian cities of Torquay and Allansford.",
@@ -99,7 +122,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Whitsunday Islands Tour",
       description:
         "The 74 Whitsunday Islands lie between the northeast coast of Queensland, Australia, and the Great Barrier Reef, a massive stretch of coral teeming with marine life. Most of the islands are uninhabited. They're characterized by dense rainforest, hiking trails and white sand beaches. The town of Airlie Beach on the mainland is the region's central hub.",
@@ -110,7 +133,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Anchor Bar",
       description:
         "Laid-back destination with a pool & sea views offering hearty meals, plus beer & cocktails.",
@@ -123,7 +146,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Slowpoke Espresso",
       description:
         "Breakfast, burgers and cakes in a cool spot with rustic wood panelling and a quaint courtyard.",
@@ -135,7 +158,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Australia",
+      activityCountry: countryIds.Australia,
       name: "Aalia",
       description:
         "AALIA beautifully combines ingredients from across territories and times, contrasting tradition with modern techniques to offer diners an Arabian nomadic time-travelling odyssey of dishes. ",
@@ -147,7 +170,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "Arches National Park",
       description:
         "Arches National Park lies north of Moab in the state of Utah. Bordered by the Colorado River in the southeast, it’s known as the site of more than 2,000 natural sandstone arches, such as the massive, red-hued Delicate Arch in the east. Long, thin Landscape Arch stands in Devils Garden to the north. Other geological formations include Balanced Rock, towering over the desert landscape in the middle of the park.",
@@ -159,7 +182,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "Zion National Park",
       description:
         "Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.",
@@ -171,7 +194,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "Bryce Canyon National Park",
       description:
         "Bryce Canyon National Park, a sprawling reserve in southern Utah, is known for crimson-colored hoodoos, which are spire-shaped rock formations. The park’s main road leads past the expansive Bryce Amphitheater, a hoodoo-filled depression lying below the Rim Trail hiking path. It has overlooks at Sunrise Point, Sunset Point, Inspiration Point and Bryce Point. Prime viewing times are around sunup and sundown.",
@@ -183,7 +206,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "Colorado River Half-Day Rafting Trip",
       description:
         "Half-day Colorado River rafting trip on mild class 1 and 2 rapids. The trip covers seven miles with fantastic scenery, informative guides and lots of fun.",
@@ -196,7 +219,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "Self-Drive 2.5-Hour Hells Revenge 4x4 Guided Tour",
       description:
         "Drive a 4x4 UTV through a guided tour of the Hell’s Revenge Trail to the Colorado River, where you can overlook into Arches National Park. This thrilling adventure through Utah's iconic landscapes is available for the morning, afternoon, or sunset.",
@@ -209,7 +232,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "3-Hour Jet Boat Tour to Dead Horse Point State Park",
       description:
         "Experience a jet boat tour on the Colorado River that passes through the bottom of Dead Horse State Park, the famous Thelma and Louise Point. Enjoy an awe-inspiring panorama.",
@@ -222,7 +245,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "Quesadilla Mobilla",
       description:
         "This is a food truck on the corner of the food truck park in Moab, UT.",
@@ -234,7 +257,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "Desert Bistro",
       description:
         "Casually upscale gourmet cuisine with a southwestern flair. Join us in our intimate dining room or on the covered patio for fun & innovative food with friendly, attentive service. Visit our website to see our current menu and make reservations.",
@@ -246,7 +269,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "United States",
+      activityCountry: countryIds.UnitedStates,
       name: "The Broken Oar Restaurant",
       description:
         "Casual American dining in a lodge setting, with options including steaks, seafood, pasta & barbecue.",
@@ -260,7 +283,7 @@ export const seedingData = {
     //THINGS TO SEE UK
     {
       category: "Things to see",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "The Lake District National Park",
       description:
         "Explore some of the most beautiful and historic walks in the Lake District. Through the lake, gorgeous grassy moors and lovely views of Lakeland Fells. Parking cost for the day below otherwise the walking routes are free!",
@@ -272,7 +295,7 @@ export const seedingData = {
 
     {
       category: "Things to see",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "Stonehenge",
       description:
         "Stonehenge is a prehistoric monument on Salisbury Plain in Wiltshire, England, two miles west of Amesbury. It consists of an outer ring of vertical sarsen standing stones, each around 13 feet high, seven feet wide, and weighing around 25 tons, topped by connecting horizontal lintel stones. The price includes entry to the museum + the ability to get up close to the site.",
@@ -283,7 +306,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "Porthcurno Beach",
       description:
         "Porthcurno Beach is considered one of the stand-out jewels of the Penwith Heritage Coast. It's folded into the rugged headlands just a little southeast of where Land's End marks the very tip of the county. That helps to keep the spot relatively remote and empty, even during the height of the summer months.",
@@ -296,7 +319,7 @@ export const seedingData = {
     //THINGS TO DO: UK
     {
       category: "Things to do",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "London Dungeon",
       description:
         "Journey through London’s darkest days with an entrance ticket to the London Dungeon. This chilling sensory experience includes elaborate staging, interactive attractions, and engaging performances. Witness gruesome scenes including the horrors of London’s notorious killers, the putrescence of the Great Plague, and the Great Fire of 1666.",
@@ -309,7 +332,7 @@ export const seedingData = {
 
     {
       category: "Things to do",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "Cornwall: The Eden Project",
       description:
         "The Eden Project in Cornwall represents a number of environmental and social projects all under the auspices of sustainable growth. Visitors can view a variety of beautiful landscapes in addition to numerous works of art. It also plays home to regular music events and hosts a botanical and conservation research division.The Eden Project is far more than a sizable horticultural theme park. It is a cultural revelation whereby visitors can learn through interactive displays together with detailed information given throughout the 10 hectares of natural wonder..",
@@ -320,7 +343,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "The Vault at the Natural History Museum",
       description:
         "Some of nature's most unique and valuable treasures are on display in the Vault gallery.See the world's largest collection of coloured diamonds (they also glow in the dark), and marvel at rare meteorites from out of this world.Star specimens and exhibits include a piece of the Winchcombe meteorite, from the first meteorite fall to have been recovered in the UK for 30 years.The Aurora Pyramid of Hope, an unrivalled collection of 296 coloured diamonds.",
@@ -334,7 +357,7 @@ export const seedingData = {
     //PLACES TO EAT: UK
     {
       category: "Places to eat",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "Ciro's Pomodoro, London",
       description:
         "A truly hidden gem tucked away in Knightsbidge on Beauchamp Place, underground bar and restaurant with live music and wonderful food! Ciros Pomodoro is a perfect combination of Great Italian food, Image, High Energy, and of course the man himself, forming the nucleus of the very successful formula. Get the ravoli with their famous sauce!",
@@ -345,7 +368,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "Bibi's Covent Garden",
       description:
         "Founded by Turkish born chef and food creative Bilur Yapici (or Bibi for short) the Bibi’s family of cafés specialises in original salad recipes, made fresh everyday. From freshly prepared, colourful salads, our specialty bulgur and made-in-house hummus, to homemade cakes and treats, mini stuffed croissants and more, you can find everything in our intimate cafés – perfect for popping in and out, or staying for a while..",
@@ -356,7 +379,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "United Kingdom",
+      activityCountry: countryIds.UnitedKingdom,
       name: "Kami, Japanese restaurant ",
       description:
         "Authentic Japanese Restaurant, created with love and balance, served with style in our funky, vibrant restaurants … that’s the Kami experience.Authentic Japanese food include Kimchi, Oyako Don, Katsu Curry Don, Miso Soup and tempura and features rice, noodle and seafood (Salmon, Sea bass, King Prawns, Squid, and Scallop) as staples.",
@@ -369,7 +392,7 @@ export const seedingData = {
     //THINGS TO SEE: NEW ZEALAND
     {
       category: "Things to see",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Fiordland National Park and Milford Sound, South Island",
       description:
         "A World Heritage Site, Fiordland National Park protects some of the most spectacular scenery in the country. Glaciers sculpted this dramatic landscape, carving the famous fjords of Milford, Dusky, and Doubtful Sounds",
@@ -380,7 +403,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Lake Taupo and Tongariro National Park, North Island",
       description:
         "In the center of the North Island and just a few kilometers from glittering Lake Taupo, New Zealand's largest lake, lies Tongariro National Park. ",
@@ -392,7 +415,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Te Waikoropupu Springs",
       description:
         "Te Waikoropupū Springs, also known as Pupu Springs and Waikaremumu Springs, are located in Golden Bay, in New Zealand's South Island. The springs are known for the clarity of the water, and the volume of water discharged. The springs are spiritually significant to Māori people. The springs feed Te Waikoropupū River, a short tributary of the Tākaka River. ",
@@ -405,7 +428,7 @@ export const seedingData = {
     //THINGS TO DO: NEW ZEALAND
     {
       category: "Things to do",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Caving",
       description:
         "In the North Island the best known caving area is Waitomo Caves in the Waikato region. There are caves that you can simply walk through; there are caves you can float through (this is called black water rafting); and there are caves that require abseiling, climbing and squeezing. Experienced operators here know how to turn you into a caver in a single day.  ",
@@ -416,7 +439,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Hobbiton Lord of The Rings Movie Set Tour",
       description:
         "Vist the number one attraction in New Zealand. Join us and experience the real Middle-earth™ at the Hobbiton Movie Set, where, in the heart of the Waikato region, you can step into the lush pastures of the Shire™, as seen in The Lord of the Rings and The Hobbit trilogies.You will journey around the 12 acre set; past Hobbit Holes, the Mill and into the world-famous Green Dragon™ Inn, where you will be presented with a complimentary, exclusive Hobbit Southfarthing beverage to conclude your own Middle-earth adventure.",
@@ -427,7 +450,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Winery Tour - Best of the Locals - Wine Tour",
       description:
         "Experience some of the best wineries around Queenstown with this full-day tour. Visit award-winning locations like Cox's Vineyard, Aurum Wines, Mondillo Vineyard and more. While sampling local wines, learn about the history of this region and meet the local families who are the faces behind the product. A delicious lunch is also included as part of this tour. ",
@@ -441,7 +464,7 @@ export const seedingData = {
     //PLACES TO EAT: NEW ZEALAND
     {
       category: "Places to eat",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Sidart",
       description:
         "Showcasing the best seasonal produce and ingredients from some of the finest growers and farmers in the Auckland region and the whole of New Zealand. Indian fine dining aiming to focus on local and seasonal produce native to both New Zealand and the wider Pacific region.",
@@ -453,7 +476,7 @@ export const seedingData = {
 
     {
       category: "Places to eat",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Pacifica Kaimoana Restaurant",
       description:
         "A licensed highly rated seafood restaurant in a bungalow on the Marine Parade, based on the intense contrast between very fine cuisine and relaxed Pacifica hospitality.",
@@ -465,7 +488,7 @@ export const seedingData = {
 
     {
       category: "Places to eat",
-      activityCountry: "New Zealand",
+      activityCountry: countryIds.NewZealand,
       name: "Rata",
       description:
         "A modern light-filled eatery tucked away in the center of bustling Queenstown, surrounded by an urban forest of native trees with a backdrop of some of the regions oldest historic buildings. It is the essence of New Zealand.",
@@ -477,7 +500,7 @@ export const seedingData = {
 
     {
       category: "Things to do",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Phi Phi Islands Speedboat Day Tour",
       description:
         "Experience the barefoot lifestyle and tropical landscape of the Phi Phi Islands in the Andaman Sea on a full-day tour from Krabi. Swim with colorful fish at Lohsamah and Monkey Bay, snorkel among coral gardens and laze on white sand beaches at Maya Bay.",
@@ -488,7 +511,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Waterfall, Elephant Sanctuary and Bamboo Rafting",
       description:
         "Explore the beauty of Chiang Mai with a waterfall trekking experience and an elephant sanctuary in one day. Interact with rescued elephants, eat a Thai lunch, and enjoy bamboo rafting in the jungle.",
@@ -499,7 +522,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "James Bond Island Luxury Sunset Cruise",
       description:
         "Experience James Bond Island on a luxury cruise equipped with a full bar, day beds, DJ, and dance floor. Enjoy a beautiful sunset ocean panorama while having dinner on board.",
@@ -510,7 +533,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Khao Yai National Park",
       description:
         "Thailands most impressive wildlife haven is just a few short hours from Bangkok by road, but the dense, dripping jungles hide elephants, monkeys, gibbons, bears, hornbills, bats and some of the last wild Thai tigers. Hikes in the rainforest pass through terrain strung with vines and orchids while waterfalls thunder into jungle pools.",
@@ -521,7 +544,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Chiang Mai",
       description:
         "Shrouded in misty, jungly mountains, Chiang Mai is one of the best destinations in Thailand for travelers looking to see a different side of the country: a city of ancient constructions, thick tropical rainforests, and hill trekking. A good way to see the wild side of Chiang Mai is to head out to Doi Inthanon National Park, which is part of the Himalayan mountain range and home to remote villages and stunning viewpoints.",
@@ -532,7 +555,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "The Grand Palace",
       description:
         "A trip to Bangkok would not be complete without a visit to the spectacular Grand Palace, a collection of impressive temples and structures in Rattanakosin, the historic centre of the city. Built by the early kings of the Chakri dynasty, this vast complex is home to shimmering gold palaces, intricate Buddha statues and over 50 temples including Wat Phra Kaeo, Thailand’s oldest temple which houses the thoUnited Statesnd-year-old Emerald Buddha. The Thai Royal Family no longer live here so visitors have the freedom to explore the buildings and get up close to throne halls, royal stables and government buildings.",
@@ -543,7 +566,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Wat Arun",
       description:
         "Located on the Thonburi side of the Chao Phraya River in Bangkok, Wat Arun is one of Bangkok’s most unique Buddhist temples. It is known as the Temple of the Dawn as when the very first rays of light strike the temple it creates an iridescent sheen that glows over the river. The temple is home to colourful pagodas and spires that tower over the water; it is recommended to climb up one of the ornate structures for spectacular views over the city.",
@@ -554,7 +577,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Ayutthaya Historical Park",
       description:
         "Founded in the mid-14th century, Ayutthaya became the second Siamese capital after Sukhothai and remained so until 1767. During this time, Ayutthaya flourished to become not only one of the world's largest cities but also as a centre of global diplomacy and commerce with trading links to much of Asia, Arabia and Europe. The UNESCO World Heritage Site of Ayutthaya is dotted with reliquary towers and vast monasteries which provide an indication of the city's former splendour with highlights including Wat Ratchaburana, Wat Chai Wattanaram and Wat Phra Mahathat.",
@@ -565,7 +588,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Lim Lao San for fierce fishball noodle soup",
       description:
         "This humble street-food stall is famous for its bowls of noodle soup, generous hunks of fish and hearty fish balls. Run by a brother and sister team (and their father before them), Lim Lao San is a 50-year-old operation that has perfected every element of its bowls, from the chewiness of the egg hor fun to the stickiness of the rice noodles made fresh every day. The eating area is tucked down a tiny alley, with tables set against exposed brick walls and old wooden door frames – you’ll feel like you’re on an outdoor movie set.",
@@ -576,7 +599,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Kway Tiew Heavy for pork noodles with a rock’n’roll twist",
       description:
         "Head chef Ekkarin “Ek” Sae-Guay is known locally as the “Carabao Noodle Guy in Thonburi”, as he belts out tunes by the Thai rock band Carabao while serving up the best pork noodles in the city. His stew is infused with a secret blend of spices for hours before the stall opens for dinner; it’s then topped with milk to help create a richer texture. There’s usually a long queue of locals at his stall, but Ek whips up the bowls in no time, entertaining the waiting crowd with a side of dance moves.",
@@ -587,7 +610,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Thailand",
+      activityCountry: countryIds.Thailand,
       name: "Sae Phun for hug-in-a-bowl chicken stew",
       description:
         "Don’t be fooled by this modern exterior; despite recent renovations, Sae Phun has been at this spot on Mahannop Road for 80 years. Recipes have been passed down through generations of family chefs, who have perfected the art of chicken stew on rice or noodles. The chicken is tender, the rice fluffy and the gravy smooth – it’s no surprise that Sae Phun won Michelin’s Bib Gourmand award.",
@@ -598,7 +621,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "Cruise the Mekong Delta",
       description:
         "After travelling over 4,000km from the Tibetan Himalaya, the Mekong hits Vietnam and slows down to a more languid pace. With islands, rice paddies, stilted villages and a way of life that hasn’t changed for centuries, it’s as if the river wants to take it easy and soak up the view. The cruise from Cai Be to Can Tho is a great way to experience a night on the river. As you travel southwards along the Mang Thit River linking the Tien Giang and Bassac systems, the channel becomes so narrow that you can peer into the riverbank’s rickety stilted houses.",
@@ -609,7 +632,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "Cruise the northern bays",
       description:
         "Three hours east of Hanoi, Halong Bay is rightly one of Vietnam's most touristic sites, with 1600 jagged limestone islands emerging from the sea like ash-green daggers. While hundreds of boats depart from Halong daily, the adjacent Bai Tu Long Bay to the northwest is still a less-touristy waterworld filled with rows of jungle-studded limestone karsts that rise like fangs amid remote floating villages. A highlight is kayaking in the heart of the bay to Vung Vieng, 24km (15 miles) away from the mainland, hopping between fishermen's homes to learn about their lifestyle.",
@@ -620,7 +643,7 @@ export const seedingData = {
     },
     {
       category: "Things to do",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "Full-Day City Tour and Water Puppet Show",
       description:
         "Experience an unforgettable day exploring Hanoi on a guided tour with lunch in the Old Quarter. Visit museums, pagodas, temples, and much more. Enjoy a traditional water puppet show.",
@@ -631,7 +654,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "The Temple of Literature",
       description:
         "At the Intersection of Van Mieu and Pho Quoc Tu Giam you’ll find the Temple of Literature, probably the most tranquil of Hanoi landmarks. The temple is said to be the first university in Vietnam, originally dedicated in 1070 to the teachings of Confucius and is a top landmark building in Vietnam.",
@@ -642,7 +665,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "The One Pillar Pagoda",
       description:
         "The One Pillar Pagoda temple rises from a single pillar in the centre of a lotus pond and is said to represent a lotus flower growing up out of the water. This tiniest of temples, at just three square metres, is one of the most iconic sights to see in Vietnam.",
@@ -653,7 +676,7 @@ export const seedingData = {
     },
     {
       category: "Things to see",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "Ho Chi Minh Mausoleum",
       description:
         "The Ho Chi Minh Mausoleum is one of Hanoi’s most imposing buildings and one of the most popular tourist attractions in Vietnam’s capital city. The huge granite memorial is located in the impressive Ba Dinh Square and is watched over by guards wearing crisp white uniforms.",
@@ -664,7 +687,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "Lac Thien, Lac Thanh and Lac Thuan",
       description:
         "Opened in 1965, Lac Thien, Lac Thanh and Lac Thuan is perhaps Hue’s most popular restaurant. It serves authentic, affordable yet high-quality Hue cuisine. If you want to taste authentic Vietnamese food but don’t know where to eat in Vietnam, Lac Thien, Lac Thanh and Lac Thuan is the place to be. This restaurant proves that top-notch food doesn’t have to be expensive. Aside from that, the quality of service and the friendly staff make the dining experience even better.",
@@ -675,7 +698,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "Banh Xeo",
       description:
         "Just by the restaurant’s name, you immediately know what Banh Xeo specializes in. This infamous food spot serves some of, if not the best banh xeo, a savory pancake or crepe, in Vietnam. If you’re looking for the top casual spots to eat in the country, definitely try Banh Xeo. This restaurant gained more attraction when the well-known celebrity chef and food travel vlogger, Anthony Bourdain, featured it in his travel documentary.",
@@ -686,7 +709,7 @@ export const seedingData = {
     },
     {
       category: "Places to eat",
-      activityCountry: "Vietnam",
+      activityCountry: countryIds.Vietnam,
       name: "Cha Ca La Vong",
       description:
         "Established in 1871, Cha Ca La Vong specializes in a traditional Vietnamese dish with the same name that locals and tourists enjoy. If you’re looking for a spot that offers authentic Vietnamese food, Cha Ca La Vong is a fantastic option. This restaurant offers a wide array of dishes that you must try during your trip to the country.",
@@ -698,6 +721,7 @@ export const seedingData = {
   ],
   countries: [
     {
+      _id: countryIds.Australia,
       name: "Australia",
       currencyName: "Australian dollar",
       continent: "Australia",
@@ -706,6 +730,7 @@ export const seedingData = {
       text: "Australia, is a country comprising the mainland of the Australian continent, the island of Tasmania, and numerous smaller islands. ",
     },
     {
+      _id: countryIds.NewZealand,
       name: "New Zealand",
       currencyName: "New Zealand Dollar",
       continent: "Oceania",
@@ -714,6 +739,7 @@ export const seedingData = {
       text: "New Zealand is an island country in the southwestern Pacific Ocean. It consists of two main landmasses—the North Island and the South Island —and over 700 smaller islands.",
     },
     {
+      _id: countryIds.Thailand,
       name: "Thailand",
       currencyName: "Thai Baht",
       continent: "Asia",
@@ -722,6 +748,7 @@ export const seedingData = {
       text: "Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha.",
     },
     {
+      _id: countryIds.UnitedStates,
       name: "United States",
       currencyName: "US Dollar",
       continent: "North America",
@@ -730,6 +757,7 @@ export const seedingData = {
       text: "The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean.",
     },
     {
+      _id: countryIds.Vietnam,
       name: "Vietnam",
       currencyName: "Vietnamese dong",
       continent: "Asia",
@@ -738,6 +766,7 @@ export const seedingData = {
       text: "Vietnam is a Southeast Asian country known for its beaches, rivers, Buddhist pagodas and bustling cities.",
     },
     {
+      _id: countryIds.UnitedKingdom,
       name: "United Kingdom",
       currencyName: "British pound sterling",
       continent: "Europe",
@@ -746,6 +775,7 @@ export const seedingData = {
       text: "The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe.",
     },
     {
+      _id: countryIds.Germany,
       name: "Germany",
       currencyName: "Euro",
       continent: "Europe",
@@ -753,6 +783,7 @@ export const seedingData = {
       text: "Germany, officially the Federal Republic of Germany, is a country in Central Europe.",
     },
     {
+      _id: countryIds.Turkey,
       name: "Turkey",
       currencyName: "Turkish lira",
       continent: "Asia/Europe",
@@ -762,6 +793,7 @@ export const seedingData = {
     },
 
     {
+      _id: countryIds.China,
       name: "China",
       currencyName: "Chinese Yuan",
       continent: "Asia",
@@ -770,6 +802,7 @@ export const seedingData = {
       text: "China, officially the People's Republic of China, is a country in East Asia. It is the world's most populous country, with a population exceeding 1.4 billion.",
     },
     {
+      _id: countryIds.Italy,
       name: "Italy",
       currencyName: "Euro",
       continent: "Europe",
@@ -778,6 +811,7 @@ export const seedingData = {
       text: "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins.",
     },
     {
+      _id: countryIds.Spain,
       name: "Spain",
       currencyName: "Euro",
       continent: "Europe",
@@ -786,6 +820,7 @@ export const seedingData = {
       text: "Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters.",
     },
     {
+      _id: countryIds.India,
       name: "India",
       currencyName: "Indian Rupee",
       continent: "Asia",
