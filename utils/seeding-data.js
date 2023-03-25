@@ -916,6 +916,144 @@ const activities = [
     imageUrl:
       "https://blog-imgs-156.fc2.com/i/s/e/isesueyoshi/317079132_5506639322785203_6822173068287996390_n.jpg",
   },
+  {
+    category: "Things to see",
+    activityCountry: countryIds.Canada,
+    name: "The Butchart Gardens",
+    description:
+      "The Butchart Gardens is a group of floral display gardens in Brentwood Bay, British Columbia, Canada, located near Victoria on Vancouver Island. The gardens receive over a million visitors each year.",
+    location: "BC V8M 1J8, Canada",
+    price: 12.5,
+    imageUrl:
+      "https://lh3.googleusercontent.com/p/AF1QipPzdr-VwNzpuq2iZyzAx_eLkcR96CT6QqiOKdCD=s680-w680-h510",
+  },
+  {
+    category: "Things to see",
+    activityCountry: countryIds.Canada,
+    name: "Notre-Dame Basilica of Montreal",
+    description:
+      "Notre-Dame Basilica is a basilica in the historic district of Old Montreal, in Montreal, Quebec, Canada. The church is located at 110 Notre-Dame Street West, at the corner of Saint Sulpice Street.",
+    location: "Montreal, Quebec H2Y 1T1, Canada",
+    price: 12,
+    imageUrl:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4f/cf/de/interior-from-the-main.jpg?w=1200&h=-1&s=1",
+  },
+  {
+    category: "Things to see",
+    activityCountry: countryIds.China,
+    name: "The Great Wall of China",
+    description:
+      "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. ",
+    location: "Northern China",
+    price: 100,
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/1200px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
+  },
+
+  {
+    category: "Things to see",
+    activityCountry: countryIds.China,
+    name: "Potala Palace",
+    description:
+      "The Potala Palace is a dzong fortress in Lhasa, Tibet. It was the winter palace of the Dalai Lamas from 1649 to 1959, has been a museum since then, and a World Heritage Site since 1994.  ",
+    location: "Tibet, China,",
+    price: 11.9,
+    imageUrl:
+      "https://whc.unesco.org/uploads/thumbs/site_0707_0001-1200-630-20110920202629.jpg",
+  },
+
+  {
+    category: "Things to see",
+    activityCountry: countryIds.Italy,
+    name: "St. Peter's Basilica",
+    description:
+      "The Papal Basilica of Saint Peter in the Vatican, or simply Saint Peter's Basilica, is a church built in the Renaissance style located in Vatican City, the papal enclave that is within the city of Rome, Italy.  ",
+    location: "Vatican City",
+    price: 0,
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/640px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+  },
+
+  {
+    category: "Things to do",
+    activityCountry: countryIds.Italy,
+    name: "Cinque Terre",
+    description:
+      "Stay in Cinque Terre - a string of centuries-old seaside villages on the rugged Italian Riviera coastline. In each of the 5 towns, colorful houses and vineyards cling to steep terraces, harbors are filled with fishing boats and trattorias turn out seafood specialties along with the Liguria region’s famous sauce, pesto. ",
+    location: "Liguria, Italy",
+    price: 150,
+    imageUrl:
+      "https://lp-cms-production.imgix.net/2021-08/GettyRF_595500583.jpg?auto=format&q=75&w=1920",
+  },
+
+  {
+    category: "Things to see",
+    activityCountry: countryIds.Spain,
+    name: "La Sagrada Familia",
+    description:
+      "The Basílica i Temple Expiatori de la Sagrada Família, shortened as the Sagrada Família, is an unfinished church in the Eixample district of Barcelona, Catalonia, Spain. ",
+    location: "Liguria, Italy",
+    price: 15,
+    imageUrl:
+      "https://lp-cms-production.imgix.net/2019-06/8ae1c56041e64517e29372a889f1beb7-la-sagrada-familia.jpg",
+  },
+  {
+    category: "Things to do",
+    activityCountry: countryIds.Spain,
+    name: "Paradiso",
+    description:
+      "Great late night bar - Dramatic, dimly lit haunt offering imaginative cocktails & classic bar bites, plus mixology classes.",
+    location: "Barcelona",
+    price: 30,
+    imageUrl:
+      "https://lp-cms-production.imgix.net/2019-06/8ae1c56041e64517e29372a889f1beb7-la-sagrada-familia.jpg",
+  },
+
+  {
+    category: "Things to do",
+    activityCountry: countryIds.Turkey,
+    name: "Hot Air Balloon in Cappadocia",
+    description:
+      "Hot Air Balloon Cappadocia to see a spectacular landscape that has been sculpted by erosion over thousands of years. These cave like dwellings and rock-hewn sanctuaries date back to the Byzantine post-Iconoclastic period, as far back as 4th Century. ",
+    location: "Cappadocia, Turkey",
+    price: 150,
+    imageUrl:
+      "https://www.travelandleisure.com/thmb/MbwHC-LaxhJsfeBEBVAYCBrg5wY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hot-air-balloons-festival-cappadocia-turkey-HOTAIR0605-6d61318b9ac0462d9d20f387e5c7d1a9.jpg",
+  },
+
+  {
+    category: "Things to see",
+    activityCountry: countryIds.Turkey,
+    name: "The Blue Mosque",
+    description:
+      "The Blue Mosque in Istanbul, also known by its official name, the Sultan Ahmed Mosque, is an Ottoman-era historical imperial mosque located in Istanbul, Turkey.",
+    location: "İstanbul, Turkey",
+    price: 0,
+    imageUrl:
+      "https://www.carwiz.rent/data/public/2019-07/blue_mosque_15db837b846c60.jpg",
+  },
+  {
+    category: "Things to see",
+    activityCountry: countryIds.Turkey,
+    name: "Topkapi Palace Museum",
+    description:
+      "The Topkapı Palace, or the Seraglio, is a large museum in the east of the Fatih district of Istanbul in Turkey. From the 1460s to the completion of Dolmabahçe Palace in 1856, it served as the administrative center of the Ottoman Empire, and was the main residence of its sultans. ",
+    location: "İstanbul, Turkey",
+    price: 22,
+    imageUrl:
+      "https://istanbul-tourist-information.com/en/wp-content/uploads/2021/01/COVER-topkapi-museum-entrance-in-istanbul-1024x538.jpg",
+  },
+  {
+    category: "Places to eat",
+    activityCountry: countryIds.Turkey,
+    name: "Last Ottoman Cafe & Restaurant",
+    description:
+      "Offering you the best of both worlds traditional dishes as well unique in house specials that have been hand picked by our chef's to take you on a culturel journey of  The Ottoman authenticity and bring you the most flavoursome food possible. ",
+    location: "İstanbul, Turkey",
+    price: 50,
+    imageUrl:
+      "https://img1.wsimg.com/isteam/ip/8f6540a3-5c8c-4e78-bb5b-25fdca2c6be7/steak%202.jpg/:/cr=t:0%25,l:5.67%25,w:88.67%25,h:100%25/rs=w:1920,h:1444,cg:true",
+  },
 ].map((activity) => ({ ...activity, _id: new mongoose.Types.ObjectId() }));
 
 const countries = [
