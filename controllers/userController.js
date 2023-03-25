@@ -72,7 +72,7 @@ const removeFromItinerary = async (req, res, next) => {
 
     console.log(updatedUserItinerary);
 
-    return res.status(400).json({
+    return res.status(200).json({
       message: "Activity removed from your itinerary",
       updatedUserItinerary,
     });
@@ -139,17 +139,27 @@ const login = async (req, res, next) => {
   }
 };
 
-const updateLikedCountries = async (req, res, next) => {
-  const { id } = req.params;
-  const { country } = req.body;
+const userlikedCountries = async (req, res, next) => {
+  const id = req.params.id;
+  console.log(id);
+  const country = req.body.country;
+  console.log(req.body);
   try {
     const foundUser = await User.findById(id);
     console.log(foundUser);
     if (!foundUser) {
       return res.status(404).json({ message: `No user found with ${id}.` });
     }
+    const listedCountries = foundUser.likedCountries;
+    if (listedCountries.includes(country)) {
+      const index = listedCountries.indexOf(country);
+      if (index !== -1) {
+        listedCountries.splice(index, 1);
+      }
+    } else {
+      foundUser.likedCountries.push(country);
+    }
 
-    foundUser.likedCountries.push(country);
     const updatedLikes = await foundUser.save();
 
     return res.status(200).json({
@@ -166,6 +176,6 @@ export default {
   login,
   getUserData,
   updateItinerary,
-  updateLikedCountries,
   removeFromItinerary,
+  userlikedCountries,
 };

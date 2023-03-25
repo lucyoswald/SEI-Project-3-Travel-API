@@ -64,17 +64,16 @@ const create = async (req, res, next) => {
 // DELETE an activity
 
 //Like button update
-const updateLikeButton = async (req, res, next) => {
+const countryLikes = async (req, res, next) => {
+  //Declare new item in my body
+  //The value  of that will determine whether its to count up or count down
+  //Then you need an if statement to check the value of the that field
+  //
+
   const { id } = req.params;
+  console.log(req.params);
   console.log("Req.body", req.body);
   const { numberOfLikes } = req.body;
-
-  // if (req.currentUser.role != "admin") {
-  //   return res.status(403).json({
-  //     message:
-  //       "Only admins or users that created this specific activity can delete entries!",
-  //   });
-  // }
 
   try {
     console.log({ numberOfLikes });
@@ -93,6 +92,7 @@ const updateLikeButton = async (req, res, next) => {
     } else {
       return res.status(200).json({
         message: `Like button updated`,
+        foundCountry,
       });
     }
   } catch (err) {
@@ -104,5 +104,5 @@ export default {
   getAllCountryData,
   getById,
   create,
-  updateLikeButton,
+  countryLikes,
 };
