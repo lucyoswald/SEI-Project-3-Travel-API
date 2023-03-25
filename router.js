@@ -54,6 +54,9 @@ router.route("/countries/:id").patch(countryController.updateLikeButton);
 router
   .route("/user/:id")
   .get(auth, userController.getUserData)
-  .patch(auth, userController.updateItinerary);
+  .patch(auth, userController.updateItinerary)
+  .delete(userController.removeFromItinerary);
+
+// router.route("user/:id/:activityId").delete(userController.removeFromItinerary);
 
 export default router;
