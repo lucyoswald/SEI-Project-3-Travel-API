@@ -43,6 +43,44 @@ const updateItinerary = async (req, res, next) => {
   }
 };
 
+const removeFromItinerary = async (req, res, next) => {
+  console.log("You made it here.");
+  const { id: userId } = req.params;
+  const { activityId } = req.query;
+  // const { activityId } = req.body; -> Change to this when testing with postman
+  console.log(userId);
+  console.log(activityId);
+  try {
+    const foundUser = await User.findById(userId);
+    if (!foundUser) {
+      return res.status(404).json({ message: `No user found with ${userId}.` });
+    }
+
+    const activityToDelete = await Activity.findById(activityId);
+    if (!activityToDelete) {
+      return res
+        .status(404)
+        .json({ message: `No activity found with ${activityId}.` });
+    }
+    console.log(activityToDelete);
+
+    const updatedUserItinerary = await User.findByIdAndUpdate(
+      userId,
+      { $pull: { itinerary: activityId } },
+      { new: true }
+    );
+
+    console.log(updatedUserItinerary);
+
+    return res.status(200).json({
+      message: "Activity removed from your itinerary",
+      updatedUserItinerary,
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
 const register = async (req, res, next) => {
   const userData = req.body;
 
@@ -138,5 +176,6 @@ export default {
   login,
   getUserData,
   updateItinerary,
+  removeFromItinerary,
   userlikedCountries,
 };
