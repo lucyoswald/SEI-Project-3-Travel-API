@@ -15,7 +15,7 @@ const countrySchema = mongoose.Schema(
       {
         type: mongoose.Schema.ObjectId,
         ref: "Activity",
-        required: false,
+        default: [],
       },
     ],
   },
