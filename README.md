@@ -548,9 +548,9 @@ const likeButton = async () => {
   
 ### Bootstrap
 
-I used bootstrap to create the activity carousel in order to display the activities in a user friendly way, so they could click through each one but also so they swipe between each one on a timer
+I used bootstrap to create the activity carousel in order to display the activities in a user friendly way, so they could click through each one but also so they swipe between each one on a timer. We also implemented bootstrap for all our cards, the loading visual and the the responsive nav bar. 
 
-Insert carasouel + discuss other bootstrap things?
+
 
 ### Update Activity Button & Errors
 
